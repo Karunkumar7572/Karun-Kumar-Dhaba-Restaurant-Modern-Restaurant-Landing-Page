@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-card {
+            width: 90%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ff6347;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-header {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+        .contact-text {
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info div {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #ff6347;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .contact-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-button {
+            padding: 12px 30px;
+            font-size: 18px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #32cd32, #228b22);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .submit-button:hover {
+            background-color: #1e7c1e;
+        }
+        .home-link {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #32cd32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-card">
+    <div class="contact-header">Contact Us</div>
+
+    <div class="contact-text">We would love to hear from you! Feel free to reach out through the form below or directly via our contact information.</div>
+
+    <div class="contact-info">
+        <div>📍 Address: kannapuram Foodie Lane, maker City</div>
+        <div>📞 Phone: 8919247572</div>
+        <div>📧 Email: karunkumar@restaurant.com</div>
+    </div>
+
+    <form class="contact-form" action="mailto:karunkumar@restaurant.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="submit-button">Send Message</button>
+    </form>
+
+    <a href="index.html" class="home-link">Back to Home</a>
+</div>
+
+</body>
+</html>

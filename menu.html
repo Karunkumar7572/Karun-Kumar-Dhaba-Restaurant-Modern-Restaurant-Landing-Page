@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://media.istockphoto.com/id/1299738191/photo/frame-of-ingredients-for-cooking-healthy-vegetarian-food-marble-surface-top-view.jpg?s=2048x2048&w=is&k=20&c=DQXhCTkxbGWs2JYDSf0P7EqOTZIU-rXdHgDdQ5LbKsk=');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-card {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ff4500;
+            margin-top: 20px;
+        }
+        .menu-header {
+            background: linear-gradient(135deg, #ff6347, #ffa07a);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+        .menu-section {
+            padding: 15px 25px;
+            border-bottom: 1px solid #ffa07a;
+        }
+        .menu-section:last-child {
+            border-bottom: none;
+        }
+        .menu-section h3 {
+            color: #ff4500;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff6347;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 18px;
+            color: #444;
+            border-bottom: 1px dashed #ddd;
+            transition: background 0.3s ease;
+        }
+        .menu-item:hover {
+            background-color: rgba(255, 99, 71, 0.1);
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item-name {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .menu-item-price {
+            color: #ff4500;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .home-button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #ffffff;
+            background: linear-gradient(135deg, #32cd32, #228b22);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .home-button:hover {
+            background-color: #1e7c1e;
+            transform: translateY(-2px);
+        }
+        .home-button a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-card">
+    <div class="menu-header">Restaurant Menu</div>
+
+    <div class="menu-section">
+        <h3>Veg Starters</h3>
+        <div class="menu-item"><span class="menu-item-name">Paneer Tikka</span><span class="menu-item-price">₹599</span></div>
+        <div class="menu-item"><span class="menu-item-name">Veg Spring Rolls</span><span class="menu-item-price">₹449</span></div>
+        <div class="menu-item"><span class="menu-item-name">Hara Bhara Kabab</span><span class="menu-item-price">₹499</span></div>
+        <div class="menu-item"><span class="menu-item-name">Stuffed Mushrooms</span><span class="menu-item-price">₹549</span></div>
+        <div class="menu-item"><span class="menu-item-name">Chilli Paneer</span><span class="menu-item-price">₹649</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Non-Veg Starters</h3>
+        <div class="menu-item"><span class="menu-item-name">Chicken Wings</span><span class="menu-item-price">₹699</span></div>
+        <div class="menu-item"><span class="menu-item-name">Fish Fingers</span><span class="menu-item-price">₹749</span></div>
+        <div class="menu-item"><span class="menu-item-name">Mutton Seekh Kebab</span><span class="menu-item-price">₹899</span></div>
+        <div class="menu-item"><span class="menu-item-name">Tandoori Chicken</span><span class="menu-item-price">₹849</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Biryani</h3>
+        <div class="menu-item"><span class="menu-item-name">Chicken Biryani</span><span class="menu-item-price">₹949</span></div>
+        <div class="menu-item"><span class="menu-item-name">Vegetable Biryani</span><span class="menu-item-price">₹749</span></div>
+        <div class="menu-item"><span class="menu-item-name">Mutton Biryani</span><span class="menu-item-price">₹1099</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Juices</h3>
+        <div class="menu-item"><span class="menu-item-name">Mango Juice</span><span class="menu-item-price">₹299</span></div>
+        <div class="menu-item"><span class="menu-item-name">Orange Juice</span><span class="menu-item-price">₹249</span></div>
+        <div class="menu-item"><span class="menu-item-name">Pineapple Juice</span><span class="menu-item-price">₹299</span></div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Desserts</h3>
+        <div class="menu-item"><span class="menu-item-name">Gulab Jamun</span><span class="menu-item-price">₹149</span></div>
+        <div class="menu-item"><span class="menu-item-name">Ice Cream Sundae</span><span class="menu-item-price">₹349</span></div>
+        <div class="menu-item"><span class="menu-item-name">Brownie</span><span class="menu-item-price">₹299</span></div>
+    </div>
+</div>
+
+<button class="home-button"><a href="index.html">Home</a></button>
+
+</body>
+</html>
