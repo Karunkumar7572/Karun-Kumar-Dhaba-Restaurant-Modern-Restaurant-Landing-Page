@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Karun Kumar Dhaba & Restaurant</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 style="color: green;">Taste the Best Dishes in Town</h1>
+            <button class="cta-button" onclick="scrollToSection('menu')">Explore Menu</button>
+        </div>
+        <div class="carousel">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/01/28/0/FNK_ROAST_BEEF_TENDERLOIN_W_MUSHROOMS_H_s4x3.jpg.rend.hgtvcom.791.594.suffix/1580239311591.jpeg" alt="Signature Dish 1" class="carousel-image active">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/7/9/0/FNK_BEEF-STROGANOFF_s4x3.jpg.rend.hgtvcom.791.594.suffix/1375577937682.jpeg" alt="Signature Dish 2" class="carousel-image">
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/1/23/0/KC0101_Italian-Chicken-Pasta-Salad_s4x3.jpg.rend.hgtvcom.791.633.suffix/1417624061835.jpeg" alt="Signature Dish 3" class="carousel-image">
+        </div>
+    </section>
+ 
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2 class="about-title">Our Story</h2>
+        <p class="about-text">Our restaurant started with a vision to serve authentic flavors with passion and dedication. We pride ourselves on our commitment to quality ingredients, exceptional service, and a memorable dining experience.</p>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="menu-section">
+        <h2 class="menu-title">Menu Highlights</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://media.istockphoto.com/id/1429067111/photo/spaghetti-bolognese-top-view-close-up-no-people-homemade.jpg?s=2048x2048&w=is&k=20&c=poAuvZcdoUZB9Vc0C6n_aUVivr7nPwz7HOfxS-aX1B4=" alt="Spaghetti">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Traditional Italian pasta with meat sauce</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://i0.wp.com/saturdayswithfrank.com/wp-content/uploads/marg-pizza-f.jpg?resize=2048%2C1023&ssl=1" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with mozzarella and basil</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.onceuponachef.com/images/2023/06/greek-salad-1-1120x1378.jpg" alt="Salad">
+                <h3>Greek Salad</h3>
+                <p>Fresh veggies with feta and olives</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Kannapuram koyyalagudem mandal Eluru District</p>
+        <p>Phone:8919 -2475-72 | Email: karunkumar@restaurant.com</p>
+        <div class="social-links">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>
